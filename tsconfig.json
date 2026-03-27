@@ -1,1 +1,1 @@
-{"compilerOptions":{"target":"ES2020","module":"commonjs","lib":["ES2020"],"outDir":"./dist","rootDir":"./","strict":false,"esModuleInterop":true,"skipLibCheck":true,"resolveJsonModule":true},"include":["server.ts"],"exclude":["node_modules","dist"]}
+{\n  \"compilerOptions\": {\n    \"strict\": true,\n    \"sourceMap\": true,\n    \"declaration\": true,\n    \"noImplicitAny\": true\n  }\n}
