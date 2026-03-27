@@ -1,17 +1,1 @@
-{
-  "name": "hermes-agent-backend",
-  "version": "1.0.0",
-  "description": "Hermes Agent Express backend powered by Claude",
-  "main": "server.ts",
-  "scripts": {
-    "dev": "tsx watch server.ts",
-    "start": "tsx server.ts",
-    "build": "tsc"
-  },
-  "dependencies": {
-    // Add dependencies here
-  },
-  "devDependencies": {
-    // Add devDependencies here
-  }
-}
+{\n  "dependencies": {\n    "@anthropic-ai/sdk": "^0.1.0",\n    "cors": "^2.8.5",\n    "express": "^4.17.3",\n    "tsx": "^3.12.3",\n    "typescript": "^4.5.4"\n  }\n}
