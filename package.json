@@ -1,0 +1,1 @@
+{\n  \"name\": \"hermesclaude\",\n  \"version\": \"1.0.0\",\n  \"dependencies\": {\n    \"@anthropic-ai/sdk\": \"^1.0.0\",\n    \"cors\": \"^2.8.5\",\n    \"express\": \"^4.17.1\",\n    \"tsx\": \"^3.12.0\",\n    \"typescript\": \"^4.5.4\"\n  }\n}
