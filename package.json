@@ -1,1 +1,17 @@
-{\n  \"name\": \"hermesclaude\",\n  \"version\": \"1.0.0\",\n  \"description\": \"A brief description of the Hermesclaude project.\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"node index.js\",\n    \"test\": \"echo 'Error: no test specified' && exit 1\"\n  },\n  \"dependencies\": {\n    \"express\": \"^4.17.1\",\n    \"mongoose\": \"^5.10.9\"\n  }\n}
+{
+  "name": "hermes-agent-backend",
+  "version": "1.0.0",
+  "description": "Hermes Agent Express backend powered by Claude",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsx watch server.ts",
+    "start": "tsx server.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    // Add dependencies here
+  },
+  "devDependencies": {
+    // Add devDependencies here
+  }
+}
