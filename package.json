@@ -1,1 +1,12 @@
-{\n  "dependencies": {\n    "@anthropic-ai/sdk": "^0.1.0",\n    "cors": "^2.8.5",\n    "express": "^4.17.3",\n    "tsx": "^3.12.3",\n    "typescript": "^4.5.4"\n  }\n}
+{
+  "name": "hermesclaude",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
+}
