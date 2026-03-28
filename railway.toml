@@ -1,3 +1,7 @@
-buildCommand = "npm run build"
-startCommand = "node dist/server.js"
-restartRetries = 5
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
