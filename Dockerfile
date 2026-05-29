@@ -1,21 +1,26 @@
-# Dockerfile
+FROM python:3.11-slim
 
-FROM node:20
+# System deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    nodejs \
+    npm \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Install hermes-agent v0.15.0 (patch release)
+RUN pip install --no-cache-dir "hermes-agent==0.15.0"
+
+# Node gateway
 COPY package*.json ./
+RUN npm install --omit=dev
 
-# Install dependencies
-RUN npm install
-
-# Copy the rest of the application code
 COPY . .
 
-# Expose the port the app runs on
 EXPOSE 3000
 
-# Command to run the application
-CMD ["npm", "start"]
+# HERMES_INSECURE=1 opts in to 0.0.0.0 bind (explicit, no inference)
+ENV HERMES_INSECURE=""
+
+CMD ["node", "server.js"]
